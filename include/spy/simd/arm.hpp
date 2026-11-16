@@ -26,8 +26,11 @@
 #elif (__ARM_FEATURE_SVE_BITS == 1024)
 #define SPY_SIMD_IS_ARM_FIXED_SVE2
 #define SPY_SIMD_DETECTED ::spy::_::simd_version::fixed_sve2_
+#elif (__ARM_FEATURE_SVE_BITS == 2048)
+#define SPY_SIMD_IS_ARM_FIXED_SVE2
+#define SPY_SIMD_DETECTED ::spy::_::simd_version::fixed_sve2_
 #else
-#error "[SPY] - No support for non-power of 2 SVE-2 cardinals"
+#error "[SPY] - SVE2 vector length must be 128, 256, 512, 1024 or 2048 bits"
 #endif
 #endif
 #endif
@@ -51,8 +54,11 @@
 #elif (__ARM_FEATURE_SVE_BITS == 1024)
 #define SPY_SIMD_IS_ARM_FIXED_SVE
 #define SPY_SIMD_DETECTED ::spy::_::simd_version::fixed_sve_
+#elif (__ARM_FEATURE_SVE_BITS == 2048)
+#define SPY_SIMD_IS_ARM_FIXED_SVE
+#define SPY_SIMD_DETECTED ::spy::_::simd_version::fixed_sve_
 #else
-#error "[SPY] - No support for non-power of 2 SVE cardinals"
+#error "[SPY] - SVE vector length must be 128, 256, 512, 1024 or 2048 bits"
 #endif
 #endif
 #endif

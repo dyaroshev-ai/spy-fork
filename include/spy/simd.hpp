@@ -181,7 +181,7 @@ namespace spy
 //! | **Power PC VMX** | `spy::vmx_`, `spy::vmx_2_03_`, `spy::vmx_2_05_`, `spy::vmx_2_06_`, `spy::vmx_2_07_`, `spy::vmx_3_00_`, `spy::vmx_3_01_` |
 //! | **Power PC VSX** | `spy::vsx_`, `spy::vsx_2_06_`, `spy::vsx_2_07_`, `spy::vsx_3_00_`, `spy::vsx_3_01_`     |
 //! | **ARM NEON** | `spy::neon_`, `spy::asimd_` |
-//! | **ARM SVE** | `spy::sve_`, `spy::sve128_`, `spy::sve256_`, `spy::sve512_`, `spy::sve1024_`             |
+//! | **ARM SVE** | `spy::sve_`, `spy::fixed_sve_`, `spy::sve2_`, `spy::fixed_sve2_` (fixed: 128 to 2048 bits) |
 //! | **WASM** | `spy::simd128_` |
 //! | **RISC-V** | `spy::rvv_` |
 //!
