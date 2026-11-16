@@ -30,7 +30,7 @@
 #define SPY_SIMD_IS_ARM_FIXED_SVE2
 #define SPY_SIMD_DETECTED ::spy::_::simd_version::fixed_sve2_
 #else
-#error "[SPY] - SVE2 vector length must be 128, 256, 512, 1024 or 2048 bits"
+#error "[SPY] - Unexpected __ARM_FEATURE_SVE_BITS value for SVE2"
 #endif
 #endif
 #endif
@@ -58,7 +58,7 @@
 #define SPY_SIMD_IS_ARM_FIXED_SVE
 #define SPY_SIMD_DETECTED ::spy::_::simd_version::fixed_sve_
 #else
-#error "[SPY] - SVE vector length must be 128, 256, 512, 1024 or 2048 bits"
+#error "[SPY] - Unexpected __ARM_FEATURE_SVE_BITS value for SVE"
 #endif
 #endif
 #endif
